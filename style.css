@@ -1,0 +1,157 @@
+html {
+    padding: -10px;
+    margin: -10px;
+    background-color: white;
+}
+body{
+    display: flex;
+}
+#sidebar.hidden {
+    display: none;
+}
+
+#sidebar.visible {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    width: 7%;
+    height: 100vh;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#sidebarContent.visible {
+    width: 40%;
+    background-color: #fff;
+    height: 100vh;
+
+}
+
+#sidebarContent.hidden {
+    display: none;
+}
+
+#content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a {
+    color: black;
+    margin:10px;
+    padding:10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+a:hover{
+    color:white;
+    background-color: hotpink;
+    cursor: pointer;
+}
+#logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px; /* Add margin for better spacing */
+}
+
+#menu,
+#close {
+    margin: 10px;
+}
+#menu:hover, #close:hover{
+    cursor: pointer;
+}
+.logo {
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    width:100%;
+    height:100vh;
+    background-color: white;
+}
+.upper-menu
+{
+    height:20%;
+    background-color: #fff;
+    overflow: visible;
+}
+#header
+{
+    align-self: center;
+    text-align: center;
+}
+.controls
+{
+    width:100%;
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#searchbar
+{
+    margin-left: 10px;
+}
+#subscribe-btn.unsubscribed
+{
+    margin-left:calc((100vw - 200px)/2);
+    border:none;
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    width:15%;
+    height: 25px;
+}
+#subscribe-btn.subscribed
+{
+    margin-left:calc((100vw - 200px)/2);
+    border:none;
+    background-color:hotpink;
+    color:white;
+    border-radius: 5px;
+    width:15%;
+    height: 25px;
+}
+#subscribe-btn:hover
+{
+    cursor: pointer;
+}
+#notifications
+{
+}
+#notifications:hover{
+    cursor: pointer;
+    color:hotpink;
+}
+#notifications.off
+{
+    color:black;
+}
+#notifications.on
+{
+    color:hotpink;
+}
+#search-icon
+{
+    margin-left:30px;
+}
