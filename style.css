@@ -17,6 +17,7 @@ body{
     align-items: center;
     width: 7%;
     height: 100vh;
+    border:solid black;
 }
 
 .material-symbols-outlined {
@@ -28,6 +29,7 @@ body{
     width: 40%;
     background-color: #fff;
     height: 100vh;
+    border-right:solid black ;
 
 }
 
@@ -95,6 +97,7 @@ main{
     height:20%;
     background-color: #fff;
     overflow: visible;
+    box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.29);
 }
 #header
 {
@@ -154,4 +157,65 @@ main{
 #search-icon
 {
     margin-left:30px;
+}
+.main {
+    display: grid;
+    width:100%;
+    height:77vh;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px; 
+    padding:10px;
+}
+
+[class^="picture"] {
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.29);
+    place-self: center;
+}
+.picture1
+{
+    background-image: url("img/dog.png");
+    background-size: cover;
+}
+.picture2
+{
+    background-image: url("img/night-girl.png");
+    background-size: cover;
+}
+.picture3
+{
+    background-image: url("img/froggy.png");
+    background-size: cover;
+}
+.picture4
+{
+    background-image: url("img/frog-chill.png");
+    background-size: cover;
+}
+.picture5
+{
+    background-image: url("img/xray.png");
+    background-size: cover;
+}
+.picture6
+{
+    background-image: url("img/pink-girl.png");
+    background-size: cover;
+}
+.picture7
+{
+    background-image: url("img/boulangerie.png");
+    background-size: cover;
+}
+.picture8
+{
+    background-image: url("img/sad-girl.png");
+    background-size: cover;
 }
